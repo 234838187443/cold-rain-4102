@@ -1,30 +1,26 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="container">
+    <h1>个人备案用站点</h1>
+    <p>仅用于公安联网备案，无其他服务</p>
+    <div class="footer">
+      <p>ICP备案号：渝ICP备2025077377号-1</p>
+      <p><a href="https://beian.mps.gov.cn" target="_blank">公安备案号：待获取</a></p>
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.container {
+  text-align: center;
+  padding: 50px;
+  margin-top: 100px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.footer {
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 2;
 }
 </style>
